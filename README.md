@@ -1,5 +1,7 @@
 # Bivariate Moran Score for Cross-Platform Tissue Slice Comparison
 
+The repository provides the necessary code to run the Stereo-seq data validation in the paper 'CTFacTomo: Reconstructing 3D Spatial Structures of RNA Tomography Transcriptomes by Collapsed Tensor Factorization'. Authors at Tianci Song, Quoc Nguyen, Charles Broadbent and Rui Kuang. [A link to the bioRxiv prepint of the paper can be found here](https://www.biorxiv.org/content/10.1101/2024.11.11.623086v2.abstract).
+
 ## Generate a Moran Score for PASTE-aligned slices
 
 invoke the following command:
@@ -20,7 +22,7 @@ python3 MoranScore.py aligned_slices/ctfactomo/reconstructed_slice_31_aligned_wi
 python3 VisAlignedSlices.py <gene_name> <reconstructed_slice> <stereoseq_slice> <reconstruction_mode> 
 ```
 
-For the slices of the gene 'gsc' that we previously generated a MoranScore for, you should get something like this when you run the following command:
+For the slices of the gene 'gsc' that we previously generated a Moran Score for, you should get something like this when you run the following command:
 
 ```
 python3 VisAlignedSlices.py gsc 31 2 CTFacTomo 
